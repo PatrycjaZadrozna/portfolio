@@ -1,0 +1,417 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+section {
+    background-color: white;
+}
+
+.hero {
+    position: relative;
+    background-color: #F36722;
+    height: 100vh;
+    color: white;
+    font-size: 40px;
+    padding: 2px;
+    
+}
+
+footer{
+    background-color: #F36722;
+    color: white;
+    font-size: 40px;
+    text-align:  center;
+    padding: 80px;
+}
+
+ footer .contact-details{
+    margin-top: 20px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 600px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+li {
+    text-decoration: none;
+}
+
+a:hover{
+    color:  #F3DD22;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.typing {
+    position: relative;
+    font-size: 30px;
+    margin: 0;
+    font-family: monospace;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.typing::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F36722;
+    animation: typing 2s steps(12) infinite;
+}
+
+p {
+    margin: 10px;
+    font-size: 25px;
+    font-weight: 300;
+    display: inline-block;
+}
+.text-hello{
+    font-size:200px;
+    font-weight: 800;
+}
+
+@keyframes typing{
+    100%{
+        left: 100%;
+    }
+}
+
+.subtext {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.hero-area {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    margin-left: 80px;
+    margin-bottom: 200px;
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #F3DD22;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 20px;
+    border: none;
+    color: white;
+}
+
+.button:hover {
+    background-color: #e94c17;
+}
+
+@keyframes photo{
+    100%{
+        left: 100%;
+    }
+}
+
+.socials {
+    padding-bottom: 200px;
+}
+.social a:hover{
+   color:  #F3DD22;
+}
+
+.social {
+    margin: 20px;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e94c17;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.icons i{
+    font-size: 100px;
+}
+
+ .adobe {
+width: 20%;
+}
+
+.sub-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.sub-section-alternative{
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    text-align: center;
+   }
+
+   .sub-section-skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px;
+    width: 80%;
+    margin: auto;
+   }
+
+   .sub-section-interests{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#btn1, #btn2, #btn3{
+    margin-left: 30px;
+}
+
+
+.hobby img{
+    display: block;
+    width: 100%;
+}
+
+h2{
+    font-size: 50px;
+}
+
+.reveal{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.5s all ease-in-out;
+
+}
+.appear{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.headshot{
+    margin-top: 50px;
+    width: 500px;
+    border-radius: 250px;
+    cursor: pointer;
+}
+
+.headshot-container img{
+
+    box-shadow: 0 5px 15px rgba( 0, 0, 0, 1);
+}
+.information{
+    margin: 10px;
+}
+.headshot-container{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    width: 500px;
+    border-radius: 250px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+    width: 300px;
+    outline: none;
+    margin: 5px;
+    font-size: 20px;
+}
+
+input::placeholder{
+    color: #222;
+}
+
+.text{
+    font-size: 100px;
+
+}
+.fa-heart{
+    color: red;
+    font-size: 100px;
+}
+.hearts img{
+    width: 50px;
+    animation: heart 7s linear infinite;
+    text-align: center;
+}
+
+.hearts{
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+@keyframes heart{
+    0%{
+        transform:  translateY(0);
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+    70%{
+
+        opacity: 1;
+    }
+    100%{
+        transform:  translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.img:nth-child(1){
+    animation-delay: 2s;
+}
+img:nth-child(2){
+    animation-delay: 3s;
+}
+img:nth-child(3){
+    animation-delay: 4s;
+}
+img:nth-child(4){
+    animation-delay: 5s;
+}
+img:nth-child(5){
+    animation-delay: 6s;
+}
+.skillsSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.small{
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1000px){
+    .project-container{
+        display: flex;
+       flex-wrap: wrap;
+    }
+}
+
+.project-card{
+    width: 300px;
+    height:500px;
+    box-shadow: 5px 5px 20px rgb(179, 172, 172);
+    margin: 20px;
+}
+
+.project-card:hover{
+    transform: scale(1.1);
+}
+
+.project-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.project-img{
+    width: 300px;
+}
+
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link{
+    text-decoration: none;
+    color: #ef744b;
+}
+
+.hamburger{
+    display: none;
+}
+.hamburger:focus{
+    outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger{
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+    ul{
+        display: none;
+        background-color: #e94c17;
+    }
+    ul.show{
+        display: block;
+    }
+    nav{
+       background-color: #e94c17;
+    }
+    .logo{
+        display: none;
+    }
+}
+
+
+
+
+
+
